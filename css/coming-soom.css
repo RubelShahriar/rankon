@@ -1,0 +1,66 @@
+#coming-soon{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#coming-soon input{
+    border: none;
+    width: 400px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    margin-bottom: var(--inner-margin);
+}
+#coming-soon .form{
+    position: relative;
+}
+#coming-soon .button{
+    padding: 15px 40px !important;
+    border-radius: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#coming-soon i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    #coming-soon .heading{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    #coming-soon input{
+        width: 400px;
+        padding: 10px 20px;
+    }
+    #coming-soon .button{
+        padding: 10px 20px !important;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 575px){
+    :root{
+        --inner-margin: 20px !important;
+    }
+    #coming-soon .heading{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #coming-soon input{
+        width: 300px;
+        padding: 5px 20px;
+    }
+    #coming-soon p{
+        width: auto;
+    }
+    #coming-soon .button{
+        padding: 5px 20px !important;
+    }
+    #coming-soon i{
+        font-size: 25px;
+    }
+
+}

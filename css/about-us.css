@@ -1,0 +1,138 @@
+  /* how it works css */
+  #how-it-works .work-card{
+    padding: 40px;
+    text-align: center;
+    margin-bottom: var(--inner-margin);
+    border-radius: 20px;
+    background-color: var(--background);
+    transition: .3s;
+    position: relative;
+  }
+  #how-it-works .img{
+    margin: 0 auto;
+    margin-bottom: var(--inner-margin);
+  }
+  #how-it-works .number{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: .2s;
+  }
+  #how-it-works .arrow-shape{
+    width: 40px;
+    height: 40px;
+    background-color: var(--background);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+    display: none;
+    transition: .5s;
+  }
+  #how-it-works .work-card:hover{
+    background-color: #ffffff;
+  }
+  #how-it-works .work-card:hover .number{
+    background-color: var(--main-color);
+  }
+  #how-it-works .work-card:hover .arrow-shape{
+    display: block;
+    background-color: #ffffff;
+  }
+  /* trusted expart */
+  #trusted-expart .team-card{
+    margin-bottom: var(--inner-margin);
+    border-radius: 20px;
+  }
+  å#trusted-expart .item{
+      background-color: #ffffff;
+  }
+  #trusted-expart .img{
+    position: relative;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    transition: .5s;
+    margin-bottom: var(--inner-margin);
+  }
+  #trusted-expart img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  #trusted-expart .sub-heading{
+    margin-bottom: 10px;
+    font-weight: 800;
+  }
+  #trusted-expart .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgba(255, 89, 89, .5);
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  #trusted-expart .icons{
+    margin-top: 50%;
+    color: #ffffff;
+    font-size: 25px;
+    transform: translateY(-50%);
+  }
+  #trusted-expart .img:hover .overlay{
+    display: block;
+  }
+
+/* responsive css */
+  @media (min-width: 992px) and (max-width: 1200px){
+    #how-it-works .cmn-img{
+        height: 90%;
+    }
+    #how-it-works .work-card {
+      padding: 25px 40px;
+    }
+    #how-it-works .sub-heading {
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    #trusted-expart .img {
+      width: 220px;
+      height: 230px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px){
+    #how-it-works .cmn-img{
+        height: 90%;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px){
+    #how-it-works .cmn-img{
+        height: 90%;
+    }
+    .sec-margin .cmn-img{
+        height: 60%;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 575px){
+    #how-it-works .cmn-img{
+        height: 80%;
+    }
+    .sec-margin .cmn-img{
+        height: 70%;
+    }
+    #trusted-expart .img{
+        width: 100%;
+        height: 200px;
+    }
+  }
